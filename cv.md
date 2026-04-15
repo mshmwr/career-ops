@@ -8,7 +8,7 @@
 
 ## Professional Summary
 
-Passionate Frontend Engineer with 4+ years of experience building high-traffic B2C web applications at the world's largest cryptocurrency exchange. Specialized in React and TypeScript development with proven track record of improving user conversion rates by 64% and leading complex feature migrations serving millions of users. Experienced in cross-functional collaboration across global teams, delivering user-facing features with comprehensive testing and documentation. Known for thoughtful problem-solving, attention to detail, and commitment to code quality.
+Passionate Frontend Engineer with 4+ years of experience building high-traffic B2C web applications at the world's largest cryptocurrency exchange. Specialized in React and TypeScript development with proven track record of improving user conversion rates and leading complex feature migrations serving millions of users. Experienced in cross-functional collaboration across global teams, delivering user-facing features with comprehensive testing and documentation. Known for thoughtful problem-solving, attention to detail, and commitment to code quality.
 
 ---
 
@@ -18,9 +18,9 @@ Passionate Frontend Engineer with 4+ years of experience building high-traffic B
 |----------|--------|
 | **Languages** | JavaScript (ES6+), TypeScript, HTML, CSS |
 | **Frontend** | React (Hooks, Router), Redux, Redux Toolkit, Next.js, Styled-Components, Tailwind CSS, Electron, Formik |
-| **Testing & Experimentation** | Jest, React Testing Library, Playwright, Unit Testing, A/B Testing (Themis) |
+| **Testing & Experimentation** | Jest, React Testing Library, Playwright, Unit Testing, A/B Testing (Themis), TDD |
 | **Dev Tools** | Git, NPM, Webpack, Chrome DevTools, Charles, Postman |
-| **AI Tools** | Cursor, Claude Code, Codex (AI-assisted development, agentic workflows) |
+| **AI Tools** | Cursor, Claude Code, Codex — applied to daily development cycles for velocity optimization and code quality; experienced in agentic workflows and autonomous testing pipelines |
 | **Monitoring & Analytics** | Keter (Log Analysis), Sensor (User Behavior Analytics), Sentry (Error Tracking) |
 | **Backend** | Node.js, Express, Python, Flask, MySQL |
 | **DevOps & CI/CD** | Jenkins, AWS EC2, Shell Script, Kubernetes |
@@ -52,7 +52,7 @@ Passionate Frontend Engineer with 4+ years of experience building high-traffic B
 - **Maintained 24/7 service stability through P0 on-call rotations**, resolving critical production issues within 1 hour using log analysis and error monitoring tools.
 <!-- Tools: Keter (log analysis), Sensor/神策 (user behavior), Sentry (error monitoring) -->
 
-- **Accelerated delivery velocity through AI-assisted development**, integrating AI agents and autonomous testing workflows into daily development cycles.
+- **Reduced schema config development time by approximately 50%** by building an AI-assisted workflow (Cursor, Claude Code) — feeding existing config files and Figma screenshots as context to generate new configs and component updates.
 
 - **Consistently delivered stable feature releases** by collaborating with 20+ cross-functional partners (Backend, iOS, Android, QA, PM, UX) across multiple time zones, maintaining quality through rigorous self-testing and code reviews.
 
