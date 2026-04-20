@@ -52,7 +52,7 @@ Global Talent Acquisition Specialist (SG&US) - Global Payment
 
 ---
 
-## 2026-04-20 — 回覆婉拒
+## 2026-04-20 — 回覆婉拒（Yi-Chen）
 
 ```
 Hi Anny,
@@ -67,5 +67,19 @@ Thanks again for thinking of me!
 
 Best,
 Yi-Chen
+```
+
+---
+
+## 2026-04-20 — Anny 回覆
+
+```
+Hi Yichen, thanks for letting me know. Feel free to drop me a message if you know someone may be interested in the role ya.
+```
+
+**待發回覆：**
+
+```
+Thanks Anny! I'll keep it in mind.
 ```
 
