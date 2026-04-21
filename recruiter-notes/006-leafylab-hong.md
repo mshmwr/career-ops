@@ -4,6 +4,7 @@
 **Role:** Frontend Software Engineer
 **Location:** In-person required (San Francisco or Taipei office)
 **Report:** [005](../reports/005-leafylab-2026-04-20.md) — Score 2.6/5
+**Language:** 中文
 
 ---
 
