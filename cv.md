@@ -98,6 +98,12 @@ Passionate Frontend Engineer with 4+ years of experience building high-traffic B
 
 ---
 
+## Projects
+
+<!-- 待填入個人專案 -->
+
+---
+
 ## Education
 
 **National Chiao Tung University** | Master of Science

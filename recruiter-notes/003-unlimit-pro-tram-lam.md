@@ -111,7 +111,7 @@ Hope this help!
 Best regards
 ```
 
-**待發草稿（2026-04-21 早上）：**
+**已發（2026-04-21）：**
 
 ```
 Hi Tram,
@@ -124,22 +124,35 @@ Thanks!
 Yi-Chen
 ```
 
-**若 Tram 反問期望薪資：**
+---
 
-先反推：
-```
-I'd rather understand your budget first — that way we both know if there's a fit before investing more time.
-```
+## 2026-04-21 — Tram 回覆（薪資範圍）
 
-若對方堅持，給高錨點：
 ```
-Based on my experience, I'm targeting around $70–85 USD/hr for senior frontend work.
+Hi, actually I'm not pretty sure about the range because it's still based on your performance, but usually we can do $40 - $75/hour
 ```
 
 ---
 
+## 2026-04-21 — 待發草稿
+
+```
+Hi Tram,
+
+Thanks for sharing the range — that works for me!
+
+I'm currently wrapping up some commitments and won't be available for interviews until around mid-May. Would that timeline still work on your end?
+
+Yi-Chen
+```
+
+**決策紀錄：**
+- $40–$75/hr 範圍用戶可接受（含低端 $40）
+- 暫不面試，延至 mid-May
+- 不另提彈性工時——Tram 已明確說 4h/day × 5d，現在提會增加摩擦，留到 engineering meeting 再觀察
+
 **分析：**
-- Q1 AI 工具：defer 到 engineering meeting，非紅旗，但需在 meeting 確認
-- Q2 工時：**20 hrs/week**（4h × 5d），按時薪計，薪資尚待議
-- Q3 On-call：可能有，但以 OT 計費，非無償待命
-- Q4 合約：**employment contract**（非承包），有勞工保障
+- Q1 AI 工具：defer 到 engineering meeting，需在 meeting 確認
+- Q2 工時：**20 hrs/week**（4h × 5d），按時薪計
+- Q3 On-call：可能有，OT 計費
+- Q4 合約：**employment contract**
