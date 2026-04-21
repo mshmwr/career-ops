@@ -156,6 +156,14 @@ I think it's still work for us Yi-Chen, just ping me when you are available
 
 **狀態：On Hold — 等用戶 mid-May 主動聯繫 Tram 安排面試。**
 
+---
+
+## 2026-04-21 — 已發（確認收到）
+
+```
+Will do, Tram! Thank you.
+```
+
 **決策紀錄：**
 - $40–$75/hr 範圍用戶可接受；**$40/hr 為底線，低於此不接受**
 - 暫不面試，延至 mid-May
