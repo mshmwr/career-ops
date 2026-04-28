@@ -5,7 +5,7 @@ url: https://jobs.ashbyhq.com/The-Flex/c66a554e-b4bf-4ed8-b95c-06c69be087b9
 created: 2026-04-28
 evaluated: 2026-04-28
 score:
-status: applied
+status: evaluated
 notes: Paris HQ, Remote-First (#LI-Remote). Proptech automation engine (Base360.ai). Node/React/AWS, Python/FastAPI bonus.
 ---
 
