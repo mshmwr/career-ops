@@ -6,7 +6,7 @@ created: 2026-04-28
 evaluated: 2026-04-28
 score: 1.5
 status: evaluated
-notes: Taipei Nangang Software Park; salary NTD 1.05M–1.6M (ceiling 36% below NTD 2.5M floor); remote conditional ("根據候選人情況可開放遠端辦公"); generic FE JD body with "AI-Native" title-only marketing; service firm pattern
+notes: Taipei Nangang Software Park; salary NTD 1.05M–1.6M (ceiling 36% below NTD 2.5M floor); ONSITE at Microsoft client site (HR cold-contact 2026-04-28 confirmed "需駐點在微軟" — vendor staffing for Microsoft, not Centific product team); React-only narrowed from JD's "React/Angular/Vue"; service firm body-shop pattern
 ---
 
 Job Posting (104): https://www.104.com.tw/job/8rbtz
@@ -64,12 +64,27 @@ Responsibility & Qualification
 
 ## Contact
 
-- HR: Adam Chuang
+- HR: Adam Chuang (莊先生)
 - Email: adam.chuang@centific.com
+- Phone: 0913830927 (per HR cold-outreach 2026-04-28)
 - Reply SLA: 本職務設定 3 個工作天回覆
+
+## HR Cold Outreach 2026-04-28
+
+HR contacted candidate directly via messaging (verbatim):
+
+> "你好，我是Centific的HR，我們招React前端工程師，需駐點在微軟。工作地點在南港軟體園區，如果您感興趣的話，可以給您介紹一下這個職缺，期待您的回覆~"
+
+**Key intel from HR message:**
+
+- **"需駐點在微軟"** — confirmed onsite at Microsoft client site (Microsoft TW Nangang office). Body-shop / vendor staffing pattern: Centific is the legal employer; daily work happens at Microsoft. This contradicts JD's "根據候選人情況可開放遠端辦公" — HR's verbal terms supersede 104 listing copy.
+- **"React前端工程師"** — narrows JD's "React/Angular/Vue" to React-only. Stack ambiguity in JD body was marketing dilution; actual req is React.
+- **No comp pre-screen** — HR did not ask salary expectation before pitching. Classic high-volume sourcing pattern (let-candidate-self-disqualify-on-comp). Salary band (1.05M–1.6M) is fixed by client SOW, not negotiable.
+- **No role detail in opening message** — HR offered to "介紹一下這個職缺" only after expression of interest. Reverses normal info flow (candidate is supposed to read JD first); reduces signal quality at first contact.
 
 ## Notes
 
 - Title says "AI-Native" but the JD body has zero AI-specific requirements — generic 8-bullet HTML/CSS/JS + React/Angular/Vue role.
 - Centific (formerly Pactera EDGE / WeP) is a US-based tech services firm with TW offices — service-firm pattern (custom delivery for enterprise clients), not product company.
-- 5/5 user hard requirements check: salary ceiling 1.6M = 64% of NTD 2.5M floor → immediate disqualifier; remote conditional, not unconditional.
+- 2026-04-28 HR confirmation: this is a Microsoft-client onsite vendor role. Day-to-day = Microsoft contractor, not Centific product. Microsoft FTE benefits NOT included; Centific employment terms apply.
+- 5/5 user hard requirements check: salary ceiling 1.6M = 64% of NTD 2.5M floor → immediate disqualifier; remote = ONSITE (HR clarification supersedes JD wording) → second disqualifier; no on-call info but client-onsite contractor role typically inherits client team's on-call cadence.
