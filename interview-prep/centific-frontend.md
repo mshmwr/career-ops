@@ -4,7 +4,7 @@
 **HR**：Adam Chuang (莊先生) — adam.chuang@centific.com / 0913830927
 **流程**：3 technical rounds total（Stage 1 / 3）
 **Salary**：1.05M–1.6M TWD（1.6M ceiling Adam 已確認可接受）
-**Client**：Microsoft team（NDA，Adam 表示後期才透露細節）
+**合作模式**：跟 Centific 台灣 vendor team 一起做事；**reporting line 是微軟的 manager**；無跨時區凌晨會
 **AI tools**：work allows Cursor / Claude Code daily
 **Score**：3.0/5（[Report 018](../reports/018-centific-2026-04-28.md)）
 
@@ -23,13 +23,13 @@
 
 ## 2. Stage 1 形式推測
 
-3 interviewers + Stage 1 of 3 + Microsoft client → 兩種情境準備：
+3 interviewers + Stage 1 of 3 + Microsoft reporting line → 兩種情境準備：
 
 | 情境 A：HR + 2 tech | 情境 B：3 tech panel |
 |--------------------|---------------------|
 | 比重：culture fit + 自我介紹 | 比重：技術 deep dive |
 | 薪資 / 動機題機率高 | live coding 機率較高 |
-| 英文要求中等 | 英文要求高（client-facing） |
+| 英文要求中等 | 英文要求高（直接對微軟 manager） |
 | 較可能：Stage 1 篩人 | 較可能：直接技術評估 |
 
 **雙情境通吃**：自我介紹 + AI workflow 案例 + Microsoft client 適配性 + React/JS 概念題輕度準備。
@@ -50,20 +50,20 @@
 
 > 先用英文開場，對方切中文你也跟著切。
 
-- [ ] **問 #1：Team 結構 + 我會待哪一塊**
-  - EN：「Could you walk me through how this team is structured — is the AI Frontend team building Microsoft-facing products end-to-end, or are we plugged into a larger Microsoft engineering org?」
-  - 中：「可以說明一下這個 team 的結構嗎？AI Frontend team 是負責 end-to-end 開發 Microsoft 客戶的產品，還是嵌進 Microsoft 自己的工程組裡？」
-  - **為什麼問**：JD 的 Microsoft team 細節 NDA 鎖住，這題是 NDA 邊緣可問的範圍
+- [ ] **問 #1：我會做的產品 + ownership 範圍**
+  - EN：「Could you tell me more about what the team is actually building — what kind of product am I going to be working on day to day, and how much of it is owned end-to-end by the Centific Taiwan team versus driven by the Microsoft side?」
+  - 中：「可以多說一下這個 team 實際在做什麼產品嗎？我每天會接觸到的產品是什麼，台灣這邊 end-to-end ownership 多少、微軟那邊主導多少？」
+  - **為什麼問**：搞清楚 Centific TW 端的工程自主性，避免進來才發現只是微軟 backlog 的執行人
 
 - [ ] **問 #2：AI tool stack 實際長什麼樣**
   - EN：「The role is titled AI-Native Frontend — what does that mean in practice? Is the team standardized on Cursor / Claude Code / Copilot, or is each engineer free to pick their own workflow?」
   - 中：「JD 寫 AI-Native Frontend，實際上 team 的 AI 工具是統一用 Cursor / Claude Code / Copilot，還是每個人自由選工作流？」
   - **為什麼問**：直接驗證「AI scope = 一般前端」的疑慮是否真的解掉
 
-- [ ] **問 #3：跨時區協作模式**（如時間夠）
-  - EN：「Working with Microsoft teams across time zones — how does the team handle async collaboration day to day? Is most communication in English written form, or are there fixed sync calls?」
-  - 中：「跟 Microsoft team 跨時區合作，team 平常 async 溝通怎麼運作？大部分是英文書面，還是有固定 sync call？」
-  - **為什麼問**：判斷英文 daily load + 是否會被拉去開美國時區凌晨會
+- [ ] **問 #3：微軟 manager 互動模式 + 台灣 team 規模**（如時間夠）
+  - EN：「Since the reporting line goes to a Microsoft manager — what does the day-to-day cadence look like? 1:1 frequency, sync vs async, English written vs spoken? And how big is the Centific Taiwan team I'd be working alongside?」
+  - 中：「reporting line 是微軟 manager，平常 daily cadence 長什麼樣？1:1 多久一次、sync 為主還是 async 為主、英文是書面還是口說？另外 Centific 台灣 team 規模多大？」
+  - **為什麼問**：判斷英文 daily load（書面 vs spoken）、跟微軟 manager 直接合作的程度、台灣本地有多少同事
 
 ---
 
@@ -71,8 +71,8 @@
 
 ### A. Why Centific？（必問）
 
-- EN：「Centific sits at an interesting intersection — Microsoft-scale clients with the engineering autonomy of a focused product team. The AI-Native frontend angle is what convinced me to move on this role specifically; I've been building my own development workflow around Cursor and Claude Code for the past year, and I want to be in an environment where that's the default expectation, not a side experiment.」
-- 中：「Centific 處在一個有意思的交叉點——Microsoft 等級的客戶，但工程上有產品 team 的自主性。讓我特別想投這個職位的是 AI-Native frontend 這個切角，過去一年我自己的開發流程都圍繞 Cursor 跟 Claude Code 在做，想找一個 AI 是預設、不是 side experiment 的環境。」
+- EN：「Centific sits at an interesting intersection — Microsoft-scale problems with the engineering autonomy of a focused product team. The AI-Native frontend angle is what convinced me to move on this role specifically; I've been building my own development workflow around Cursor and Claude Code for the past year, and I want to be in an environment where that's the default expectation, not a side experiment.」
+- 中：「Centific 處在一個有意思的交叉點——做的是 Microsoft 等級的問題，但工程上有產品 team 的自主性。讓我特別想投這個職位的是 AI-Native frontend 這個切角，過去一年我自己的開發流程都圍繞 Cursor 跟 Claude Code 在做，想找一個 AI 是預設、不是 side experiment 的環境。」
 
 ### B. 自我介紹（30–45 秒版，沿用 Abee 那份）
 
@@ -86,14 +86,14 @@
 - **Problem**：5 國 KYC 流程，每國規則不同；產品要新增/修改步驟，工程師要手刻 schema + 對應 React component
 - **Action**：把現有 schema config + Figma 截圖丟給 Cursor / Claude Code 當 context，讓 AI 生成新 schema + component update；自己做 review 跟修整
 - **Result**：schema config 開發時間砍約 50%；工程師可以把心力放在 edge case 跟 UX 細節
-- **Centific tie-in**：「對 Microsoft client 來說，這套流程能 scale 到 multi-tenant config / locale-specific 客製，是直接可搬的能力」
+- **Centific tie-in**：「這套 schema-driven 加 AI 生成的流程，對 Microsoft 等級規模的多租戶 / locale-specific 客製是直接可搬的能力」
 
 #### 錨點 2：K-Line Prediction 六代理人 pipeline
 
 - **Problem**：自己 side project，想驗證能不能用 AI agent 替代多人 team 開發產品
 - **Action**：定義六個 role 的 agent（PM / Architect / Engineer / Reviewer / QA / Designer），用 ticket-driven 方式跑開發；7 天內跑完 40+ scoped ticket
 - **Result**：full-stack 上線（React/TS frontend + FastAPI backend on Cloud Run），URL: k-line-prediction-app.web.app
-- **Centific tie-in**：「這個方法論能讓一個 senior engineer 在 client project 上輸出兩三個人的 throughput」
+- **Centific tie-in**：「這個方法論能讓一個 senior engineer 在實際產品上輸出兩三個人的 throughput」
 
 ### D. 為什麼離開 Binance？
 
@@ -124,7 +124,7 @@
 - [ ] 三位 interviewer 是誰、什麼 role → 寫回 `data/recruiter-comms.md` #18
 - [ ] Stage 2 / 3 預期內容、時程 → 寫回
 - [ ] 有沒有要求 take-home / coding test → 寫回
-- [ ] Microsoft client NDA 是不是還鎖著 → 寫回
+- [ ] 微軟 manager 互動模式 + 台灣 team 規模 → 寫回
 - [ ] 我自己感覺：team fit / 想不想繼續 → 1–5 分記在 retro
 
 ---
@@ -133,7 +133,7 @@
 
 - 薪資不主動提（Adam 已搞定 band）
 - AI workflow 是核心差異化，每個 interviewer 至少要聽到一次
-- Microsoft client 細節對方不會講，不要追太緊（NDA）
+- 微軟產品 / NDA 細節對方未必能講，不要追太緊；但「我會做什麼產品」可以問
 - 三位 interviewer 都打招呼、記名字（散場可道謝）
 - 中英切換看 interviewer 開口語言；技術詞彙不翻譯
 - 不要 oversell K-Line — 強調是 methodology validation，不是商業產品
