@@ -74,10 +74,10 @@
 - EN：「Centific sits at an interesting intersection — Microsoft-scale clients with the engineering autonomy of a focused product team. The AI-Native frontend angle is what convinced me to move on this role specifically; I've been building my own development workflow around Cursor and Claude Code for the past year, and I want to be in an environment where that's the default expectation, not a side experiment.」
 - 中：「Centific 處在一個有意思的交叉點——Microsoft 等級的客戶，但工程上有產品 team 的自主性。讓我特別想投這個職位的是 AI-Native frontend 這個切角，過去一年我自己的開發流程都圍繞 Cursor 跟 Claude Code 在做，想找一個 AI 是預設、不是 side experiment 的環境。」
 
-### B. 自我介紹（60 秒版）
+### B. 自我介紹（30–45 秒版，沿用 Abee 那份）
 
-- EN：「I'm Yi-Chen — six years of development experience, four of those at Binance shipping React/TypeScript interfaces to millions of users. Two things I want to highlight: at Binance KYC I rebuilt the verification flow from hardcoded React into a fully configurable architecture, lifting 7-day conversion from 12.19% to 20.03% across 5 countries. And I built an AI-assisted development workflow on Cursor and Claude Code that cut schema config time by ~50%. On the side I shipped K-Line Prediction — a production ETH/USDT pattern-matching app — solo, by directing a six-agent AI development pipeline. That's the work I want to keep doing at Centific.」
-- 中：「我叫李怡蓁，六年開發經驗，其中四年在 Binance 做 React/TypeScript 給上百萬用戶用。兩個重點：第一，Binance KYC 我把硬編 React 流程重構成可配置架構，5 國驗證流程 7 天轉換率從 12.19% 拉到 20.03%；第二，我在 Cursor 跟 Claude Code 上建了 AI 輔助開發流程，schema config 時間砍 50%。side project 是 K-Line Prediction，ETH/USDT pattern matching app，獨立用六代理人 AI pipeline 開發完成。這是我想在 Centific 繼續做的工作。」
+- EN：「I'm Yi-Chen, a frontend engineer with around six years of experience. I spent most of that time at Binance working on global-scale B2C products — mainly owning the KYC frontend, focused on configurable architecture and conversion optimization. Along the way I also integrated AI-assisted tools into my daily workflow, which noticeably improved delivery speed. In my personal projects I've taken that further — using a multi-agent architecture where I focus purely on direction and decision-making while AI handles the implementation, running the full cycle from design to production. Centific stands out to me because the tech stack is a strong match, and the AI-Native frontend angle directly maps to the direction I've been pushing my own work toward.」
+- 中：「我是 Yi-Chen，前端工程師，有六年左右的工程經驗。過去幾年在 Binance 做全球規模的 B2C 產品，主要負責 KYC 流程的前端，專注在可配置架構和用戶轉換率的優化——在這個過程中也把 AI 輔助工具帶進日常開發流程，明顯提升了交付效率。個人專案方面，我更進一步，嘗試用多代理人的架構做產品開發，自己只負責提供方向和決策，讓 AI 完成實作，從設計到上線全程跑通。我對 Centific 這個職位很有興趣，因為技術棧高度吻合，而且 AI-Native frontend 這個切角，正好對應到我這一年在做的方向。」
 
 ### C. AI workflow case study（最重要，準備兩個錨點 deep dive）
 
