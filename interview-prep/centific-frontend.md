@@ -1,0 +1,140 @@
+# Centific Sr. AI-Native Frontend Engineer — Stage 1 Prep
+
+**面試**：2026-05-12 (Tue) 15:00 TPE | Video call (Teams/Zoom 待確認) | 3 interviewers (role 未告知)
+**HR**：Adam Chuang (莊先生) — adam.chuang@centific.com / 0913830927
+**流程**：3 technical rounds total（Stage 1 / 3）
+**Salary**：1.05M–1.6M TWD（1.6M ceiling Adam 已確認可接受）
+**Client**：Microsoft team（NDA，Adam 表示後期才透露細節）
+**AI tools**：work allows Cursor / Claude Code daily
+**Score**：3.0/5（[Report 018](../reports/018-centific-2026-04-28.md)）
+
+---
+
+## 1. 對方公司速記（Centific = ex-Pactera EDGE rebrand）
+
+- 前身 Pactera EDGE，2024 rebrand 為 Centific，定位 AI-first localization + product engineering 服務商
+- 主力客戶：Microsoft（Azure AI / Copilot 生態）、Google、Meta
+- 台北辦公室在信義區（統一國際大樓 / 誠品附近）
+- 過去主力業務：localization、data labeling（OneForma 平台）；AI Frontend 是 rebrand 後新業務
+- Glassdoor 整體：41.9% positive interview, 難度 2.77/5（中低）
+- 平均流程長度 ~25 天
+
+---
+
+## 2. Stage 1 形式推測
+
+3 interviewers + Stage 1 of 3 + Microsoft client → 兩種情境準備：
+
+| 情境 A：HR + 2 tech | 情境 B：3 tech panel |
+|--------------------|---------------------|
+| 比重：culture fit + 自我介紹 | 比重：技術 deep dive |
+| 薪資 / 動機題機率高 | live coding 機率較高 |
+| 英文要求中等 | 英文要求高（client-facing） |
+| 較可能：Stage 1 篩人 | 較可能：直接技術評估 |
+
+**雙情境通吃**：自我介紹 + AI workflow 案例 + Microsoft client 適配性 + React/JS 概念題輕度準備。
+
+---
+
+## 通話前 checklist
+
+- [ ] 確認 Teams / Zoom link（Adam 應寄出，沒收到 5/12 上午追）
+- [ ] 網路、麥克風、背景測試 → 14:50 進 waiting room
+- [ ] 開好這份檔案 + cv-en.md + Centific JD 在第二螢幕
+- [ ] 桌上備紙筆 + 水
+- [ ] 複習 K-Line + Binance Cursor 50% 兩個 AI workflow 錨點
+
+---
+
+## 通話中：你要問的問題（3 個 interviewer 各 1 題）
+
+> 先用英文開場，對方切中文你也跟著切。
+
+- [ ] **問 #1：Team 結構 + 我會待哪一塊**
+  - EN：「Could you walk me through how this team is structured — is the AI Frontend team building Microsoft-facing products end-to-end, or are we plugged into a larger Microsoft engineering org?」
+  - 中：「可以說明一下這個 team 的結構嗎？AI Frontend team 是負責 end-to-end 開發 Microsoft 客戶的產品，還是嵌進 Microsoft 自己的工程組裡？」
+  - **為什麼問**：JD 的 Microsoft team 細節 NDA 鎖住，這題是 NDA 邊緣可問的範圍
+
+- [ ] **問 #2：AI tool stack 實際長什麼樣**
+  - EN：「The role is titled AI-Native Frontend — what does that mean in practice? Is the team standardized on Cursor / Claude Code / Copilot, or is each engineer free to pick their own workflow?」
+  - 中：「JD 寫 AI-Native Frontend，實際上 team 的 AI 工具是統一用 Cursor / Claude Code / Copilot，還是每個人自由選工作流？」
+  - **為什麼問**：直接驗證「AI scope = 一般前端」的疑慮是否真的解掉
+
+- [ ] **問 #3：跨時區協作模式**（如時間夠）
+  - EN：「Working with Microsoft teams across time zones — how does the team handle async collaboration day to day? Is most communication in English written form, or are there fixed sync calls?」
+  - 中：「跟 Microsoft team 跨時區合作，team 平常 async 溝通怎麼運作？大部分是英文書面，還是有固定 sync call？」
+  - **為什麼問**：判斷英文 daily load + 是否會被拉去開美國時區凌晨會
+
+---
+
+## 通話中：對方會問的，準備好的答案
+
+### A. Why Centific？（必問）
+
+- EN：「Centific sits at an interesting intersection — Microsoft-scale clients with the engineering autonomy of a focused product team. The AI-Native frontend angle is what convinced me to move on this role specifically; I've been building my own development workflow around Cursor and Claude Code for the past year, and I want to be in an environment where that's the default expectation, not a side experiment.」
+- 中：「Centific 處在一個有意思的交叉點——Microsoft 等級的客戶，但工程上有產品 team 的自主性。讓我特別想投這個職位的是 AI-Native frontend 這個切角，過去一年我自己的開發流程都圍繞 Cursor 跟 Claude Code 在做，想找一個 AI 是預設、不是 side experiment 的環境。」
+
+### B. 自我介紹（60 秒版）
+
+- EN：「I'm Yi-Chen — six years of development experience, four of those at Binance shipping React/TypeScript interfaces to millions of users. Two things I want to highlight: at Binance KYC I rebuilt the verification flow from hardcoded React into a fully configurable architecture, lifting 7-day conversion from 12.19% to 20.03% across 5 countries. And I built an AI-assisted development workflow on Cursor and Claude Code that cut schema config time by ~50%. On the side I shipped K-Line Prediction — a production ETH/USDT pattern-matching app — solo, by directing a six-agent AI development pipeline. That's the work I want to keep doing at Centific.」
+- 中：「我叫李怡蓁，六年開發經驗，其中四年在 Binance 做 React/TypeScript 給上百萬用戶用。兩個重點：第一，Binance KYC 我把硬編 React 流程重構成可配置架構，5 國驗證流程 7 天轉換率從 12.19% 拉到 20.03%；第二，我在 Cursor 跟 Claude Code 上建了 AI 輔助開發流程，schema config 時間砍 50%。side project 是 K-Line Prediction，ETH/USDT pattern matching app，獨立用六代理人 AI pipeline 開發完成。這是我想在 Centific 繼續做的工作。」
+
+### C. AI workflow case study（最重要，準備兩個錨點 deep dive）
+
+#### 錨點 1：Binance KYC Cursor + Claude Code 50% schema config win
+
+- **Problem**：5 國 KYC 流程，每國規則不同；產品要新增/修改步驟，工程師要手刻 schema + 對應 React component
+- **Action**：把現有 schema config + Figma 截圖丟給 Cursor / Claude Code 當 context，讓 AI 生成新 schema + component update；自己做 review 跟修整
+- **Result**：schema config 開發時間砍約 50%；工程師可以把心力放在 edge case 跟 UX 細節
+- **Centific tie-in**：「對 Microsoft client 來說，這套流程能 scale 到 multi-tenant config / locale-specific 客製，是直接可搬的能力」
+
+#### 錨點 2：K-Line Prediction 六代理人 pipeline
+
+- **Problem**：自己 side project，想驗證能不能用 AI agent 替代多人 team 開發產品
+- **Action**：定義六個 role 的 agent（PM / Architect / Engineer / Reviewer / QA / Designer），用 ticket-driven 方式跑開發；7 天內跑完 40+ scoped ticket
+- **Result**：full-stack 上線（React/TS frontend + FastAPI backend on Cloud Run），URL: k-line-prediction-app.web.app
+- **Centific tie-in**：「這個方法論能讓一個 senior engineer 在 client project 上輸出兩三個人的 throughput」
+
+### D. 為什麼離開 Binance？
+
+- EN：「Binance went through a headcount reduction and my position was affected. I used the time since to go deep on K-Line and on the AI workflow methodology, which I'm now applying to my next role.」
+- 中：「Binance 做了組織縮編，我的職位在這次受影響。離職後我把時間拿去把 K-Line 跟 AI workflow 方法論做深，現在帶進下一份工作。」
+- 追問「是表現問題嗎？」→ EN：「No — this was a company-wide headcount reduction, not performance-related. My manager was very supportive throughout.」
+
+### E. React / JavaScript 概念題（中低機率，但要備）
+
+| 題目方向 | 一句話準備 |
+|---------|-----------|
+| useEffect / useMemo 差別 | useEffect 跑副作用、useMemo 快取計算結果 + dep 變才重算 |
+| React render perf 怎麼 debug | React DevTools Profiler 抓 unnecessary re-render、檢查 referential stability、必要 memo / useMemo |
+| Webview Pool / micro-app 怎麼設計 | pre-load + cache 高頻 micro-app、共用渲染容器、idle 時 release |
+| Electron 多進程 / 單進程切換考量 | 多進程：隔離、崩潰不互影響但記憶體高；單進程：省記憶體但要 sandbox event loop |
+| RTL / i18n 做過什麼 | Binance Arabic RTL：layout mirror、icon flip、numeric direction、CSS logical properties |
+
+### F. 薪資（等對方先開口；直到 final round 才確認數字）
+
+- 對方主動問 → EN：「Adam and I aligned on a band already — I'd rather focus this conversation on the role and team fit, and revisit numbers when there's mutual interest.」
+- 中：「我跟 Adam 之前已經對齊過 band 了，這輪我想先聚焦在 role 跟 team fit，等雙方有 mutual interest 時再回到數字會比較自然。」
+- 真的被逼問具體數字 → EN：「My target is in the upper range Adam and I discussed — closer to the 1.6M ceiling than the floor.」
+
+---
+
+## 通話後：決策 gate
+
+- [ ] 三位 interviewer 是誰、什麼 role → 寫回 `data/recruiter-comms.md` #18
+- [ ] Stage 2 / 3 預期內容、時程 → 寫回
+- [ ] 有沒有要求 take-home / coding test → 寫回
+- [ ] Microsoft client NDA 是不是還鎖著 → 寫回
+- [ ] 我自己感覺：team fit / 想不想繼續 → 1–5 分記在 retro
+
+---
+
+## 注意事項
+
+- 薪資不主動提（Adam 已搞定 band）
+- AI workflow 是核心差異化，每個 interviewer 至少要聽到一次
+- Microsoft client 細節對方不會講，不要追太緊（NDA）
+- 三位 interviewer 都打招呼、記名字（散場可道謝）
+- 中英切換看 interviewer 開口語言；技術詞彙不翻譯
+- 不要 oversell K-Line — 強調是 methodology validation，不是商業產品
+- 散場前一定問「下一步是什麼、什麼時候會收到回覆」
