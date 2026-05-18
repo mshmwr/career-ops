@@ -104,7 +104,7 @@ Passionate Frontend Engineer with 4+ years of experience building high-traffic B
 **Live:** [Website](https://k-line-prediction-app.web.app) | [App](https://k-line-prediction-app.web.app/app) | 2026
 
 - **Operated a six-agent AI development pipeline (PM, Architect, Engineer, Reviewer, QA, Designer) as sole operator** to ship a production ETH/USDT pattern prediction app — 73+ tickets shipped, 91/91 acceptance criteria covered.
-- **Built a self-correcting pipeline through 43 post-mortems**, codifying 246 engineering lessons into permanent harness rules — e.g., Content-Alignment Gate (PM holds handoff for user-voice sign-off, K-044), Pre-Design Dry-Run Proof (Architect dry-runs `git show <base>:<file>` before any "API unchanged" claim, K-013), Cross-Page Shared-Component Consistency (QA asserts DOM equivalence across all consuming routes, K-035).
+- **Built a self-correcting pipeline through 43 post-mortems**, codifying 246 engineering lessons into permanent harness rules — e.g., Content-Alignment Gate (PM holds handoff for user-voice sign-off), Pre-Design Dry-Run Proof (Architect dry-runs `git show <base>:<file>` before any "API unchanged" claim), Cross-Page Shared-Component Consistency (QA asserts DOM equivalence across all consuming routes).
 - **Enforced design as source of truth end-to-end** — only Designer edits `.pen` design files; Engineer implements against exported specs; Reviewer performs line-by-line JSX parity check before any merge.
 - **Delivered full-stack**: React + TypeScript + Vite on Firebase Hosting, FastAPI + Python on Cloud Run, Vitest + Playwright + pytest coverage, plus a pre-commit gate blocking role-doc drift.
 
@@ -115,5 +115,5 @@ Passionate Frontend Engineer with 4+ years of experience building high-traffic B
 **National Chiao Tung University** | Master of Science
 *Institute of Multimedia Engineering, College of Computer Science* | 2017 - 2019
 
-**National Sun Yat-sen University** | Bachelor of Science
+**National Sun Yat-sen University** | Bachelor of Engineering
 *Department of Mechanical and Electromechanical Engineering* | 2013 - 2017
