@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenNet / football.com Frontend Engineer — HR 面試 Checklist</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f5f5f5;
+    color: #1a1a1a;
+    padding: 24px 16px;
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  header {
+    background: #0d9488;
+    color: white;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+  }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  header p { font-size: 0.85rem; opacity: 0.9; margin-top: 4px; }
+
+  section {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  section h2 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0d9488;
+    margin-bottom: 16px;
+  }
+
+  .item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+  }
+  .item:last-child { margin-bottom: 0; }
+
+  .item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    accent-color: #0d9488;
+    cursor: pointer;
+  }
+
+  .item label { cursor: pointer; flex: 1; }
+  .item label .q {
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .item label .en {
+    font-size: 0.85rem;
+    color: #555;
+    background: #effdfa;
+    border-left: 3px solid #0d9488;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    display: block;
+  }
+  .item label .zh {
+    font-size: 0.85rem;
+    color: #555;
+    background: #f5f5f5;
+    border-left: 3px solid #aaa;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: block;
+  }
+  .item label .note {
+    font-size: 0.78rem;
+    color: #888;
+    margin-top: 6px;
+    display: block;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 99px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .badge-priority { background: #fee2e2; color: #b91c1c; }
+  .badge-optional { background: #e5e7eb; color: #6b7280; }
+
+  .answered { opacity: 0.45; }
+  .answered .q { text-decoration: line-through; }
+
+  .warn {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    color: #92400e;
+    margin-top: 16px;
+  }
+  .warn.danger {
+    background: #fef2f2;
+    border-color: #fca5a5;
+    color: #991b1b;
+  }
+  .warn + .warn { margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>football.com（OpenNet）— Frontend Engineer / HR Screen</h1>
+  <p>辦公室：松江南京（前 3 個月現場，之後看情況 hybrid）&nbsp;·&nbsp; 流程：90 分 HackerRank home test → 通過才 onsite → 核薪 &nbsp;·&nbsp; 需英文 CV</p>
+</header>
+
+<!-- 自我介紹 -->
+<section>
+  <h2>自我介紹（開場，約 30–45 秒）</h2>
+
+  <div style="margin-bottom: 14px;">
+    <div style="font-size:0.75rem;font-weight:700;color:#0d9488;margin-bottom:6px;">中文</div>
+    <div style="background:#f5f5f5;border-left:3px solid #aaa;padding:12px 14px;border-radius:4px;font-size:0.88rem;line-height:1.7;color:#333;">
+      「我是 Yi-Chen，前端工程師，大約六年經驗。大部分時間在 Binance 做全球規模的 B2C 產品，主要負責 KYC 流程的前端，把 7 天轉換率從 12% 拉到 20%，做法是把驗證流程重構成可配置架構。我的核心技術棧是 React 和 TypeScript，但底層基礎是跨框架的——元件架構、狀態管理、效能優化——所以我有信心可以快速上手 Vue。我也把 AI 輔助工具深度帶進日常開發，把 config 開發時間砍掉約一半，個人專案更進一步用多代理人 pipeline 從設計到上線跑出一個完整產品。football.com 吸引我的是它是一個從零打造、有真實規模的 consumer super-app——把媒體、社群、遊戲、電商整合在一個產品裡——這種 mobile-first、高流量的 B2C 前端，正好是我在 Binance 大規模做過、也最擅長的事。」
+    </div>
+  </div>
+
+  <div>
+    <div style="font-size:0.75rem;font-weight:700;color:#0d9488;margin-bottom:6px;">English</div>
+    <div style="background:#effdfa;border-left:3px solid #0d9488;padding:12px 14px;border-radius:4px;font-size:0.88rem;line-height:1.7;color:#333;">
+      "I'm Yi-Chen, a frontend engineer with around six years of experience. Most of that was at Binance, building global-scale B2C products — I owned the KYC frontend, where I lifted the 7-day conversion rate from 12% to 20% by rebuilding the verification flow into a fully configurable architecture. My core stack is React and TypeScript, but my foundation is framework-agnostic — component architecture, state management, performance — so I'm comfortable ramping into Vue quickly. I've also brought AI-assisted tooling deep into my workflow, which cut my config development time roughly in half, and in a personal project I ran a full multi-agent pipeline shipping a production app from design to launch. football.com stands out to me because it's a greenfield consumer super-app at real scale — media, social, gaming, and commerce in one product — and that mobile-first, high-traffic B2C work is exactly what I did at Binance and where I'm strongest."
+    </div>
+  </div>
+</section>
+
+<!-- 你要問的問題 -->
+<section>
+  <h2>你要問 recruiter / HR 的問題</h2>
+
+  <div class="item" id="q1">
+    <input type="checkbox" id="c1" onchange="toggle('q1','c1')">
+    <label for="c1">
+      <span class="q">① 薪資 band <span class="badge badge-priority">做 test 前就問</span></span>
+      <span class="en">"Before I take the test, could you share the salary band for this role? I want to make sure we're aligned early — the posted range is fairly wide."</span>
+      <span class="zh">「在我做測驗之前，可以先分享這個職位的薪資 band 嗎？我想確認我們的期待是不是一致，職缺公布的範圍滿寬的。」</span>
+      <span class="note">⚠️ 「核薪」排在 onsite 之後——別等到那時才知道錢。職缺上限 1.8M 已低於你的 floor 2M。做 90 分 test 前就請 recruiter 給真實 band，談不到 2M → 直接停，別投入 test + onsite。</span>
+    </label>
+  </div>
+
+  <div class="item" id="q2">
+    <input type="checkbox" id="c2" onchange="toggle('q2','c2')">
+    <label for="c2">
+      <span class="q">② football.com 產品現況 <span class="badge badge-priority">必問</span></span>
+      <span class="en">"What stage is football.com at right now — pre-launch, live, or scaling? And is the frontend team building greenfield, or maintaining an existing codebase?"</span>
+      <span class="zh">「football.com 現在在哪個階段——還沒上線、已上線、還是在擴張？前端 team 是從零開發，還是維護既有的 codebase？」</span>
+      <span class="note">確認是不是真的 greenfield、團隊規模、以及你進去會擁有哪一塊。</span>
+    </label>
+  </div>
+
+  <div class="item" id="q3">
+    <input type="checkbox" id="c3" onchange="toggle('q3','c3')">
+    <label for="c3">
+      <span class="q">③ React → Vue 的上手期待 <span class="badge badge-priority">必問</span></span>
+      <span class="en">"The JD lists Vue, React, or Angular — my production depth is in React. How does the team think about ramp-up time for someone coming from a strong React background into your stack?"</span>
+      <span class="zh">「JD 上寫 Vue / React / Angular 都可以——我 production 的深度在 React。team 怎麼看待 React 背景的人上手你們技術棧的時間？」</span>
+      <span class="note">主動誠實點出 gap，反而展現你做過功課、不會掩飾。</span>
+    </label>
+  </div>
+
+  <div class="item" id="q4">
+    <input type="checkbox" id="c4" onchange="toggle('q4','c4')">
+    <label for="c4">
+      <span class="q">④ 3 個月後的 hybrid 怎麼運作 <span class="badge badge-priority">必問</span></span>
+      <span class="en">"I understand the first three months are on-site at the Songjiang–Nanjing office, then it moves to hybrid. Could you tell me how the hybrid works after that — how many days in office, and what it depends on?"</span>
+      <span class="zh">「我了解前三個月要在松江南京辦公室現場，之後轉 hybrid。可以說明之後 hybrid 實際怎麼運作嗎——一週進辦公室幾天、看什麼條件決定？」</span>
+      <span class="note">你是 remote-first。確認 3 個月後的實際彈性，也確認前 3 個月全現場通勤你能不能接受。</span>
+    </label>
+  </div>
+
+  <div class="item" id="q5">
+    <input type="checkbox" id="c5" onchange="toggle('q5','c5')">
+    <label for="c5">
+      <span class="q">⑤ 後續流程 <span class="badge badge-optional">有時間再問</span></span>
+      <span class="en">"After the home test, what does the onsite look like — how many rounds, who I'd meet, and how long until the offer stage?"</span>
+      <span class="zh">「過了 home test 之後，onsite 大概長怎樣——幾關、會見到誰、到 offer 階段大概多久？」</span>
+    </label>
+  </div>
+</section>
+
+<!-- 對方會問你的 -->
+<section>
+  <h2>recruiter / HR 會問你的 — 準備好的答案</h2>
+
+  <div class="item" id="q6">
+    <input type="checkbox" id="c6" onchange="toggle('q6','c6')">
+    <label for="c6">
+      <span class="q">Why football.com / OpenNet？</span>
+      <span class="en">"I'm looking for a greenfield consumer product where frontend work has real user impact, and football.com fits that — a mobile-first super-app at real scale. That kind of high-traffic B2C work, with performance and UX front and center, is exactly what I did at Binance. Being able to shape something earlier-stage, rather than only maintaining a mature flow, is what draws me."</span>
+      <span class="zh">「我在找一個從零開始、前端對用戶有實際影響力的消費級產品，football.com 很符合——一個有真實規模的 mobile-first super-app。這種高流量 B2C、把效能和 UX 放在最前面的工作，正是我在 Binance 做過的。能參與比較早期、而不是只維護成熟流程的產品，是吸引我的地方。」</span>
+    </label>
+  </div>
+
+  <div class="item" id="q7">
+    <input type="checkbox" id="c7" onchange="toggle('q7','c7')">
+    <label for="c7">
+      <span class="q">你有 Vue 經驗嗎？（誠實版）</span>
+      <span class="en">"My production depth is in React and TypeScript, not Vue specifically. But the underlying skills carry over directly — component design, state management, build tooling, performance — and Vue's reactivity model is something I'm confident picking up fast. I'd also lean on AI-assisted tooling to ramp on a new codebase quickly, which is something I do routinely."</span>
+      <span class="zh">「我在 production 的深度是 React 和 TypeScript，不是 Vue。但底層能力是直接共通的——元件設計、狀態管理、build 工具、效能優化——Vue 的響應式模型我也有信心快速上手。我也會用 AI 輔助工具快速熟悉新的 codebase，這是我平常就在做的事。」</span>
+      <span class="note">不要假裝有 Vue 經驗。JD 明確接受 React，誠實 + 強調可轉移能力就夠了。</span>
+    </label>
+  </div>
+
+  <div class="item" id="q8">
+    <input type="checkbox" id="c8" onchange="toggle('q8','c8')">
+    <label for="c8">
+      <span class="q">產業是運動博弈，你能接受嗎？（HR 通常會主動講）</span>
+      <span class="en">"Yes — I understand football.com operates in the sports betting space. I'm comfortable with that; my focus is on the consumer product and the engineering challenges of building it at scale."</span>
+      <span class="zh">「可以——我了解 football.com 是運動博弈領域的產品。我沒問題，我的重點放在這個消費級產品本身、以及把它做到規模的工程挑戰。」</span>
+      <span class="note">⚠️ 先誠實問自己介不介意博弈產業。介意就別給這個答案、也別進這關。HR 會主動講清楚產業性質，他們在看你能不能接受。</span>
+    </label>
+  </div>
+
+  <div class="item" id="q9">
+    <input type="checkbox" id="c9" onchange="toggle('q9','c9')">
+    <label for="c9">
+      <span class="q">你現在還在 Binance 嗎？/ 為什麼離開？（等問再說）</span>
+      <span class="en">"I've already left — the company went through a headcount reduction and my role was affected. Since then I've been building a personal project end to end, and now I'm actively looking for the right next step."</span>
+      <span class="zh">「我已經離開了——公司做了縮編，我的職位受到影響。之後我做了一個個人專案、從頭到尾跑完，現在是認真在找下一個合適的機會。」</span>
+      <span class="note">不要主動在開場提，等對方問到履歷上的 Binance 再說。</span>
+    </label>
+  </div>
+
+  <div class="item" id="q10">
+    <input type="checkbox" id="c10" onchange="toggle('q10','c10')">
+    <label for="c10">
+      <span class="q">薪資期望（等對方問再說）</span>
+      <span class="en">"My target is around NTD 2.5M total comp annually, with 2M as my floor. I'm flexible on the base, bonus, and equity mix. Where does this role's band sit?"</span>
+      <span class="zh">「我的目標大概是年薪總包 250 萬，底線是 200 萬。base、bonus、股票的比例都可以談。這個職位的 band 大概在哪？」</span>
+      <span class="note">⚠️ 正式核薪在 onsite 之後，但你可以在第一通電話就把 band 問出來。職缺上限 1.8M &lt; 你的 floor 2M——卡在 1.8M 就禮貌結束。</span>
+    </label>
+  </div>
+
+  <div class="item" id="q11">
+    <input type="checkbox" id="c11" onchange="toggle('q11','c11')">
+    <label for="c11">
+      <span class="q">到職時間 / notice period</span>
+      <span class="en">"I'm available to start immediately — I'm not currently employed, so there's no notice period."</span>
+      <span class="zh">「我可以立刻到職——目前沒有在職，所以沒有 notice period 的問題。」</span>
+    </label>
+  </div>
+</section>
+
+<div class="warn danger">
+  ⚠️ <strong>薪資是最大風險，而且時機很差。</strong>「核薪」排在 onsite 之後——你會先花 90 分 HackerRank + 一輪 onsite 才知道錢。職缺 band 上限 1.8M 已低於你的 2M floor。對策：<strong>做 test 前</strong>就請 recruiter 給真實 band，談不到 2M 直接停。
+</div>
+<div class="warn">
+  ⚠️ 產品 football.com 包裝成 media / social / gaming / commerce，但 app 商店分類就是 <strong>Sports Betting</strong>——本質是運動博弈。先想清楚你介不介意，HR 通常會主動講產業性質。
+</div>
+<div class="warn">
+  ⚠️ 不是 remote-first：<strong>前 3 個月松江南京全現場</strong>，之後 hybrid「看情況」。確認前 3 個月的通勤你能接受，以及之後 hybrid 的實際天數。
+</div>
+<div class="warn">
+  ⚠️ 需英文 CV，面試也會評估英文流暢度。第一關 home test 是 90 分 HackerRank（純技術），放鬆寫。
+</div>
+
+<script>
+  function toggle(itemId, checkId) {
+    const item = document.getElementById(itemId);
+    const cb = document.getElementById(checkId);
+    if (cb.checked) {
+      item.classList.add('answered');
+    } else {
+      item.classList.remove('answered');
+    }
+  }
+</script>
+
+</body>
+</html>

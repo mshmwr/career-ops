@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>football.com — 90 分 HackerRank 衝刺 Cheat Sheet</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f5f5f5;
+    color: #1a1a1a;
+    padding: 24px 16px;
+    max-width: 820px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  header {
+    background: #0d9488;
+    color: white;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+  }
+  header h1 { font-size: 1.2rem; font-weight: 700; }
+  header p { font-size: 0.85rem; opacity: 0.9; margin-top: 4px; }
+
+  section {
+    background: white;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  section h2 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0d9488;
+    margin-bottom: 14px;
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 16px 0 6px;
+    color: #0f766e;
+  }
+  h3:first-of-type { margin-top: 0; }
+  p.desc { font-size: 0.85rem; color: #555; margin-bottom: 6px; }
+
+  pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 8px;
+    padding: 14px 16px;
+    overflow-x: auto;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin: 6px 0 4px;
+  }
+  code { font-family: "SF Mono", Menlo, Consolas, monospace; }
+  p.desc code, li code {
+    background: #effdfa;
+    color: #0f766e;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.85em;
+  }
+
+  ul { margin: 4px 0 4px 18px; font-size: 0.88rem; }
+  li { margin-bottom: 5px; }
+
+  .check { list-style: none; margin-left: 0; }
+  .check li { display: flex; gap: 10px; align-items: flex-start; }
+  .check input { width: 18px; height: 18px; margin-top: 2px; accent-color: #0d9488; flex-shrink: 0; cursor: pointer; }
+
+  .strat { background: #effdfa; border-left: 3px solid #0d9488; padding: 12px 16px; border-radius: 4px; font-size: 0.88rem; }
+  .strat ol { margin-left: 18px; }
+  .strat li { margin-bottom: 6px; }
+
+  .warn {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    color: #92400e;
+    margin-top: 14px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>football.com — 90 分 HackerRank 衝刺 Cheat Sheet</h1>
+  <p>Frontend Engineer home test &nbsp;·&nbsp; HR 沒指定範圍 → 按常見組合：JS 演算法 + 前端手寫函式 + React 小題</p>
+</header>
+
+<!-- 作答策略 -->
+<section>
+  <h2>90 分鐘作答策略（先讀這個）</h2>
+  <div class="strat">
+    <ol>
+      <li><strong>開場 3 分鐘把所有題目掃過一遍</strong>，先做最有把握、分數高的。HackerRank 是按通過的 test case 給分，不是全有全無。</li>
+      <li><strong>先寫能過的暴力解</strong>，跑過再優化。卡住別硬撐——單題超過 25 分就跳下一題。</li>
+      <li><strong>邊界一定測</strong>：空陣列、單一元素、重複值、負數、超大輸入（隱藏 test case 常考效能 → 用 Map/Set 不要 nested loop）。</li>
+      <li><strong>讀清楚回傳格式</strong>：回 array 還是 string？index 還是值？順序有沒有要求？格式錯整題零分。</li>
+      <li>有 console / 自訂測資的話，<strong>先用範例 input 驗一次再 submit</strong>。</li>
+    </ol>
+  </div>
+  <div class="warn">⚠️ 英文題目。看到 "given an array... return..." 先確認回傳型別與順序，再動手。</div>
+</section>
+
+<!-- 必背手寫函式 -->
+<section>
+  <h2>必背手寫函式（FE HackerRank 最高頻）</h2>
+  <p class="desc">這些幾乎每次都出其中幾個。練到能不查資料 90 秒內寫完。</p>
+
+  <h3>debounce</h3>
+  <p class="desc">最後一次呼叫後等 <code>delay</code> 才執行。搜尋框、resize。</p>
+  <pre><code>function debounce(fn, delay) {
+  let t;
+  return function (...args) {
+    clearTimeout(t);
+    t = setTimeout(() => fn.apply(this, args), delay);
+  };
+}</code></pre>
+
+  <h3>throttle</h3>
+  <p class="desc">每 <code>limit</code> 毫秒最多執行一次。scroll、滑鼠移動。</p>
+  <pre><code>function throttle(fn, limit) {
+  let inThrottle = false;
+  return function (...args) {
+    if (inThrottle) return;
+    fn.apply(this, args);
+    inThrottle = true;
+    setTimeout(() => (inThrottle = false), limit);
+  };
+}</code></pre>
+
+  <h3>deepClone</h3>
+  <p class="desc">深拷貝。面試要手寫，別只講 <code>structuredClone</code>。</p>
+  <pre><code>function deepClone(value) {
+  if (value === null || typeof value !== 'object') return value;
+  if (value instanceof Date) return new Date(value);
+  if (Array.isArray(value)) return value.map(deepClone);
+  return Object.fromEntries(
+    Object.entries(value).map(([k, v]) => [k, deepClone(v)])
+  );
+}</code></pre>
+
+  <h3>flatten（巢狀陣列攤平）</h3>
+  <pre><code>function flatten(arr) {
+  return arr.reduce(
+    (acc, item) =>
+      acc.concat(Array.isArray(item) ? flatten(item) : item),
+    []
+  );
+}</code></pre>
+
+  <h3>Promise.all polyfill</h3>
+  <p class="desc">按順序收集結果，任一 reject 就整體 reject。</p>
+  <pre><code>function promiseAll(promises) {
+  return new Promise((resolve, reject) => {
+    const results = [];
+    let done = 0;
+    if (promises.length === 0) return resolve(results);
+    promises.forEach((p, i) => {
+      Promise.resolve(p).then((val) => {
+        results[i] = val;
+        if (++done === promises.length) resolve(results);
+      }, reject);
+    });
+  });
+}</code></pre>
+
+  <h3>curry</h3>
+  <pre><code>function curry(fn) {
+  return function curried(...args) {
+    if (args.length >= fn.length) return fn.apply(this, args);
+    return (...next) => curried.apply(this, [...args, ...next]);
+  };
+}</code></pre>
+
+  <h3>memoize</h3>
+  <pre><code>function memoize(fn) {
+  const cache = new Map();
+  return function (...args) {
+    const key = JSON.stringify(args);
+    if (cache.has(key)) return cache.get(key);
+    const result = fn.apply(this, args);
+    cache.set(key, result);
+    return result;
+  };
+}</code></pre>
+
+  <h3>EventEmitter（on / off / emit）</h3>
+  <pre><code>class EventEmitter {
+  constructor() { this.events = new Map(); }
+  on(name, fn) {
+    if (!this.events.has(name)) this.events.set(name, new Set());
+    this.events.get(name).add(fn);
+    return this;
+  }
+  off(name, fn) {
+    this.events.get(name)?.delete(fn);
+    return this;
+  }
+  emit(name, ...args) {
+    this.events.get(name)?.forEach((fn) => fn(...args));
+    return this;
+  }
+}</code></pre>
+</section>
+
+<!-- 演算法核心肌群 -->
+<section>
+  <h2>演算法核心肌群（用 Map / Set 換時間）</h2>
+
+  <h3>Two Sum — 一次掃描 + hashmap O(n)</h3>
+  <pre><code>function twoSum(nums, target) {
+  const seen = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    const need = target - nums[i];
+    if (seen.has(need)) return [seen.get(need), i];
+    seen.set(nums[i], i);
+  }
+  return [];
+}</code></pre>
+
+  <h3>字頻 / anagram</h3>
+  <pre><code>function isAnagram(a, b) {
+  if (a.length !== b.length) return false;
+  const count = {};
+  for (const ch of a) count[ch] = (count[ch] || 0) + 1;
+  for (const ch of b) {
+    if (!count[ch]) return false;
+    count[ch]--;
+  }
+  return true;
+}</code></pre>
+
+  <h3>常用 one-liner（要熟到反射）</h3>
+  <ul>
+    <li>去重：<code>[...new Set(arr)]</code></li>
+    <li>排序數字：<code>arr.sort((a, b) =&gt; a - b)</code>（預設是字串排序，會錯）</li>
+    <li>分組計數：<code>arr.reduce((m, x) =&gt; (m[x] = (m[x]||0)+1, m), {})</code></li>
+    <li>最大值：<code>Math.max(...arr)</code> / 總和：<code>arr.reduce((a,b)=&gt;a+b, 0)</code></li>
+    <li>chunk：<code>Array.from({length: Math.ceil(a.length/n)}, (_, i) =&gt; a.slice(i*n, i*n+n))</code></li>
+  </ul>
+
+  <ul class="check">
+    <li><input type="checkbox"> 陣列：two-sum、去重、分組、滑動視窗、排序比較器</li>
+    <li><input type="checkbox"> 字串：palindrome、anagram、字頻、reverse words</li>
+    <li><input type="checkbox"> 遞迴：flatten、費氏、走訪巢狀物件</li>
+    <li><input type="checkbox"> async：Promise 鏈、async/await 錯誤處理、event loop 順序（micro vs macro task）</li>
+  </ul>
+</section>
+
+<!-- React / 前端實作 -->
+<section>
+  <h2>React / 前端實作題（若出現）</h2>
+
+  <h3>fetch + 渲染清單（loading / error 三態）</h3>
+  <p class="desc">最常見的 React 題型。記得 key、三態、cleanup。</p>
+  <pre><code>function UserList() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let alive = true;
+    fetch('/api/users')
+      .then((r) => {
+        if (!r.ok) throw new Error('request failed');
+        return r.json();
+      })
+      .then((data) => alive && setUsers(data))
+      .catch((e) => alive && setError(e.message))
+      .finally(() => alive && setLoading(false));
+    return () => { alive = false; };
+  }, []);
+
+  if (loading) return &lt;p&gt;Loading…&lt;/p&gt;;
+  if (error) return &lt;p&gt;Error: {error}&lt;/p&gt;;
+  return (
+    &lt;ul&gt;
+      {users.map((u) =&gt; (
+        &lt;li key={u.id}&gt;{u.name}&lt;/li&gt;
+      ))}
+    &lt;/ul&gt;
+  );
+}</code></pre>
+
+  <h3>受控輸入 + 即時過濾</h3>
+  <pre><code>function SearchableList({ items }) {
+  const [q, setQ] = useState('');
+  const filtered = items.filter((it) =&gt;
+    it.toLowerCase().includes(q.toLowerCase())
+  );
+  return (
+    &lt;&gt;
+      &lt;input value={q} onChange={(e) =&gt; setQ(e.target.value)} /&gt;
+      &lt;ul&gt;{filtered.map((it) =&gt; &lt;li key={it}&gt;{it}&lt;/li&gt;)}&lt;/ul&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+
+  <ul class="check">
+    <li><input type="checkbox"> useState / useEffect（含 cleanup）反射級熟練</li>
+    <li><input type="checkbox"> 受控表單、list + key、條件渲染</li>
+    <li><input type="checkbox"> 常見元件：counter、todo、accordion、tabs、star rating</li>
+    <li><input type="checkbox"> 純 JS 版：addEventListener、event delegation、createElement（怕考 vanilla）</li>
+  </ul>
+</section>
+
+<!-- 考前 30 分檢查 -->
+<section>
+  <h2>考前 30 分鐘快速過一遍</h2>
+  <ul class="check">
+    <li><input type="checkbox"> debounce / throttle 默寫一次</li>
+    <li><input type="checkbox"> deepClone / flatten 默寫一次</li>
+    <li><input type="checkbox"> Promise.all polyfill 默寫一次</li>
+    <li><input type="checkbox"> two-sum（Map 版）默寫一次</li>
+    <li><input type="checkbox"> React fetch+清單三態 默寫一次</li>
+    <li><input type="checkbox"> 環境確認：穩定網路、安靜空間、HackerRank 介面先熟悉（語言選 JS / Node）</li>
+  </ul>
+</section>
+
+</body>
+</html>
