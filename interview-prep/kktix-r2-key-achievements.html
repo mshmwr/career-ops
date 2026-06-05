@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>李宜蓁 — 三個關鍵成果 | KKTIX 二面</title>
+  <style>
+    :root {
+      --brand: #2563eb;
+      --brand-light: #eff6ff;
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --purple: #7c3aed;
+      --purple-light: #f5f3ff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px 24px 60px;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--brand);
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    }
+
+    .card.blue   .card-header { background: var(--brand); }
+    .card.green  .card-header { background: var(--green); }
+    .card.purple .card-header { background: var(--purple); }
+
+    .card-header {
+      padding: 22px 28px 18px;
+      color: #fff;
+    }
+
+    .card-header .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,.22);
+      border-radius: 100px;
+      padding: 2px 10px;
+      margin-bottom: 10px;
+    }
+
+    .card-header h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .card-header .company {
+      margin-top: 6px;
+      font-size: 0.88rem;
+      opacity: .85;
+    }
+
+    .metric-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 18px 28px;
+      border-bottom: 1px solid var(--border);
+      background: #fafbfc;
+    }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .metric .value {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--brand);
+    }
+
+    .card.green  .metric .value { color: var(--green); }
+    .card.purple .metric .value { color: var(--purple); }
+
+    .metric .label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 4px;
+      text-align: center;
+    }
+
+    .card-body {
+      padding: 20px 28px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .card-body p { font-size: 0.95rem; }
+
+    .card-body ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .card-body ul li {
+      font-size: 0.93rem;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .card-body ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--brand);
+      font-size: 0.8rem;
+      top: 2px;
+    }
+
+    .card.green  .card-body ul li::before { color: var(--green); }
+    .card.purple .card-body ul li::before { color: var(--purple); }
+
+    .relevance-box {
+      background: var(--brand-light);
+      border-left: 3px solid var(--brand);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 0.88rem;
+      color: #1e40af;
+    }
+
+    .card.green  .relevance-box { background: var(--green-light);  border-color: var(--green);  color: #14532d; }
+    .card.purple .relevance-box { background: var(--purple-light); border-color: var(--purple); color: #4c1d95; }
+
+    .relevance-box strong {
+      display: block;
+      font-size: 0.7rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      opacity: .65;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .card-header h2 { font-size: 1.1rem; }
+      .metric .value { font-size: 1.6rem; }
+      .metric-row { gap: 8px; padding: 14px 18px; }
+      .card-body, .card-header { padding-left: 18px; padding-right: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>李宜蓁 — 三個關鍵成果</h1>
+  <p>Frontend Engineer ・ 6+ 年經驗 ・ KKTIX 二面分享素材</p>
+</header>
+
+<div class="cards">
+
+  <!-- Achievement 1 -->
+  <div class="card blue">
+    <div class="card-header">
+      <span class="tag">成果 1 — 可設定化平台重構</span>
+      <h2>將 KYC 驗證轉換率從 12% 提升至 20%，<br>同時解鎖 5 個新市場</h2>
+      <div class="company">Binance ・ KYC Team ・ 2022–present</div>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric">
+        <span class="value">+64%</span>
+        <span class="label">7-day KYC 轉換率提升<br>12.19% → 20.03%</span>
+      </div>
+      <div class="metric">
+        <span class="value">5</span>
+        <span class="label">新市場上線<br>14.5% lifetime pass rate</span>
+      </div>
+      <div class="metric">
+        <span class="value">~50%</span>
+        <span class="label">Schema config 交付<br>時間縮短（AI 工作流）</span>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <div>
+        <div class="section-label">背景 / 問題</div>
+        <p>原本的 KYC 驗證流程是以硬編碼邏輯實作，每新增一個國家或驗證情境就要修改多處程式碼，上線週期長、容易出錯，且無法靈活支援行動裝置與桌機的差異化 UI。</p>
+      </div>
+      <div>
+        <div class="section-label">我做了什麼</div>
+        <ul>
+          <li>將整個驗證流程重構為 React/TypeScript 可設定化平台，以前端維護的 config 檔動態渲染各種驗證情境 UI，移除散落各處的硬編碼邏輯</li>
+          <li>把散落在各國的 config 邏輯集中管理，讓新市場接入從「多處同時修改」變成「新增一份 config 檔」</li>
+          <li>導入 AI 輔助工作流（Cursor + Claude Code），以現有 config + Figma 截圖為 context，自動生成新 config 草稿，約縮短 50% 交付時間</li>
+          <li>透過 A/B 實驗設計與數據驗證驅動 UX 決策，確認上線後轉換率確實提升再全量推送</li>
+        </ul>
+      </div>
+      <div class="relevance-box">
+        <strong>與 KKTIX 的關聯</strong>
+        把 Rails + AngularJS 逐步遷移到 React 而不中斷服務，跟我在 Binance 做的事形狀一樣：舊系統不停機、以 config 層隔離新舊邏輯、分批驗證上線。我擅長的不是「懂什麼 legacy stack」，而是「怎麼在不破壞現有功能的前提下漸進替換」。
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievement 2 -->
+  <div class="card green">
+    <div class="card-header">
+      <span class="tag">成果 2 — 前端效能優化</span>
+      <h2>設計 Webview Pool，讓桌機應用載入速度提升 30%</h2>
+      <div class="company">Binance ・ Electron Team ・ 2021–2022</div>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric">
+        <span class="value">+30%</span>
+        <span class="label">Webview 載入速度提升<br>（預載 + 快取複用）</span>
+      </div>
+      <div class="metric">
+        <span class="value">Pool</span>
+        <span class="label">設計模式<br>預建實例 → 切換直接複用</span>
+      </div>
+      <div class="metric">
+        <span class="value">Memory</span>
+        <span class="label">single/multi-process<br>依裝置效能彈性切換</span>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <div>
+        <div class="section-label">背景 / 問題</div>
+        <p>Binance 桌機交易平台整合多個 micro-app，用戶每次切換功能都需從頭初始化一個新的 Webview，造成明顯延遲。流量愈高、切換愈頻繁，體驗就愈差。</p>
+      </div>
+      <div>
+        <div class="section-label">我做了什麼</div>
+        <ul>
+          <li>設計並實作 Webview Pool：應用啟動時預先建立 Webview 實例池，切換時直接取用已備好的實例，省去每次初始化的成本</li>
+          <li>加入快取策略，讓常用的 micro-app 保持預載狀態，進一步縮短冷啟動時間</li>
+          <li>開發 single/multi-process 切換功能，讓使用者依裝置記憶體選擇「效能優先」或「資源節省」模式，解決高規與低規裝置的不同需求</li>
+        </ul>
+      </div>
+      <div class="relevance-box">
+        <strong>與 KKTIX 的關聯</strong>
+        演唱會開票瞬間大量用戶同時操作，前端效能直接影響搶票體驗。我有從架構層面設計快取與預載方案的實際經驗，而不只是調整參數。
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievement 3 -->
+  <div class="card purple">
+    <div class="card-header">
+      <span class="tag">成果 3 — 跨團隊協作與功能擁有權</span>
+      <h2>接手未文件化的合規遷移流程，<br>整合 4 個模組並成為主要維護者</h2>
+      <div class="company">Binance ・ KYC Team ・ 2022–present</div>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric">
+        <span class="value">4</span>
+        <span class="label">未文件化模組<br>整合進合規遷移流程</span>
+      </div>
+      <div class="metric">
+        <span class="value">20+</span>
+        <span class="label">跨職能協作夥伴<br>Backend / iOS / Android / QA / PM / UX</span>
+      </div>
+      <div class="metric">
+        <span class="value">&lt;1hr</span>
+        <span class="label">Critical incident<br>平均恢復時間</span>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <div>
+        <div class="section-label">背景 / 問題</div>
+        <p>法規異動要求 KYC 流程必須加入新的合規驗證步驟。問題是：需要整合的 4 個模組來自主流程的不同位置，沒有完整文件，原本的負責人也已離職。這個任務沒有地圖，也沒有前人可以問。</p>
+      </div>
+      <div>
+        <div class="section-label">我做了什麼</div>
+        <ul>
+          <li>主動接下這個範圍模糊的任務，從現有程式碼反推 4 個模組的行為邊界，建立自己的文件</li>
+          <li>與 Backend、iOS、Android、QA、PM、UX 共 20+ 位跨職能夥伴協調，跨多個時區對齊技術規格與上線時間</li>
+          <li>交付後成為這個流程的主要前端 owner，負責持續維護與後續功能擴充</li>
+          <li>建立 log 分析與錯誤監控機制，能在 1 小時內解決 critical incident，維持高流量 B2C 系統的生產穩定性</li>
+        </ul>
+      </div>
+      <div class="relevance-box">
+        <strong>與 KKTIX 的關聯</strong>
+        遷移 legacy 系統最怕的不是技術本身，而是「沒有文件的黑箱」。我有在大型生產系統中接手 undocumented scope、從程式碼反推邊界、並成為長期 owner 的實際經驗。KKTIX 遷移 AngularJS 的過程中，一定會遇到類似的情況。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  李宜蓁 (yichen.lee.20@gmail.com) ・ linkedin.com/in/yichenlee-career ・ github.com/mshmwr
+</footer>
+
+</body>
+</html>
