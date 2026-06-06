@@ -255,48 +255,9 @@
   </div>
 
   <!-- Achievement 2 -->
-  <div class="card green">
-    <div class="card-header">
-      <span class="tag">成果 2 — 前端效能優化</span>
-      <h2>設計 Webview Pool，讓桌機應用載入速度提升 30%</h2>
-      <div class="company">Binance ・ Electron Team ・ 2021–2022</div>
-    </div>
-
-    <div class="metric-row">
-      <div class="metric">
-        <span class="value">+30%</span>
-        <span class="label">Webview 載入速度提升<br>（預載 + 快取複用）</span>
-      </div>
-      <div class="metric">
-        <span class="value">Pool</span>
-        <span class="label">設計模式<br>預建實例 → 切換直接複用</span>
-      </div>
-      <div class="metric">
-        <span class="value">Memory</span>
-        <span class="label">single/multi-process<br>依裝置效能彈性切換</span>
-      </div>
-    </div>
-
-    <div class="card-body">
-      <div>
-        <div class="section-label">背景 / 問題</div>
-        <p>Binance 桌機交易平台整合多個 micro-app，用戶每次切換功能都需從頭初始化一個新的 Webview，造成明顯延遲。流量愈高、切換愈頻繁，體驗就愈差。</p>
-      </div>
-      <div>
-        <div class="section-label">我做了什麼</div>
-        <ul>
-          <li>設計並實作 Webview Pool：應用啟動時預先建立 Webview 實例池，切換時直接取用已備好的實例，省去每次初始化的成本</li>
-          <li>加入快取策略，讓常用的 micro-app 保持預載狀態，進一步縮短冷啟動時間</li>
-          <li>開發 single/multi-process 切換功能，讓使用者依裝置記憶體選擇「效能優先」或「資源節省」模式，解決高規與低規裝置的不同需求</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Achievement 3 -->
   <div class="card purple">
     <div class="card-header">
-      <span class="tag">成果 3 — 跨團隊協作與功能擁有權</span>
+      <span class="tag">成果 2 — 跨團隊協作與功能擁有權</span>
       <h2>接手未文件化的合規遷移流程，<br>整合 4 個模組並成為主要維護者</h2>
       <div class="company">Binance ・ KYC Team ・ 2022–present</div>
     </div>
@@ -328,6 +289,45 @@
           <li>與 Backend、iOS、Android、QA、PM、UX 共 20+ 位跨職能夥伴協調，跨多個時區對齊技術規格與上線時間</li>
           <li>開發後成為這個流程的主要前端 owner，負責持續維護與後續功能擴充</li>
           <li>透過 log 分析與錯誤監控工具，能在 1 小時內解決 critical incident，維持高流量 B2C 系統的生產穩定性</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievement 3 -->
+  <div class="card green">
+    <div class="card-header">
+      <span class="tag">成果 3 — 前端效能優化</span>
+      <h2>設計 Webview Pool，讓桌機應用載入速度提升 30%</h2>
+      <div class="company">Binance ・ Electron Team ・ 2021–2022</div>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric">
+        <span class="value">+30%</span>
+        <span class="label">Webview 載入速度提升<br>（預載 + 快取複用）</span>
+      </div>
+      <div class="metric">
+        <span class="value">Pool</span>
+        <span class="label">設計模式<br>預建實例 → 切換直接複用</span>
+      </div>
+      <div class="metric">
+        <span class="value">Memory</span>
+        <span class="label">single/multi-process<br>依裝置效能彈性切換</span>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <div>
+        <div class="section-label">背景 / 問題</div>
+        <p>Binance 桌機交易平台整合多個 micro-app，用戶每次切換功能都需從頭初始化一個新的 Webview，造成明顯延遲。流量愈高、切換愈頻繁，體驗就愈差。</p>
+      </div>
+      <div>
+        <div class="section-label">我做了什麼</div>
+        <ul>
+          <li>設計並實作 Webview Pool：應用啟動時預先建立 Webview 實例池，切換時直接取用已備好的實例，省去每次初始化的成本</li>
+          <li>加入快取策略，讓常用的 micro-app 保持預載狀態，進一步縮短冷啟動時間</li>
+          <li>開發 single/multi-process 切換功能，讓使用者依裝置記憶體選擇「效能優先」或「資源節省」模式，解決高規與低規裝置的不同需求</li>
         </ul>
       </div>
     </div>
